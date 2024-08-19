@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram Username Inserter (close_friends)",
+    "version": "1.0",
+    "description": "Inserts predefined strings into Instagram input fields.",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["data.json"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "action": {}
+  }
